@@ -11,3 +11,6 @@ php:
 before_script:
   - composer selfupdate
   - composer install --dev --prefer-dist
+  
+script:
+  - php vendor/bin/phpunit src/Tests/
